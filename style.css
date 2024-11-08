@@ -119,6 +119,33 @@ form button:hover {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
+#calculatorForm {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.input-cont {
+  position: relative;
+  display: inline-block;
+}
+.tooltip {
+  visibility: hidden;
+  background-color: #fff;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+}
+.input-cont:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
 #calculator {
   display: none;
   width: 35rem;

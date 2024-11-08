@@ -20,14 +20,23 @@
       <div id="container">
         <div id="form">
           <form id="calculatorForm">
-            <input type="text" id="firstInput" placeholder="10" />
-            <select name="" id="operator">
-              <option value="+">+</option>
-              <option value="-">-</option>
-              <option value="*">*</option>
-              <option value="/">/</option>
-            </select>
-            <input type="text" id="secondInput" placeholder="10" />
+            <div class="input-cont">
+              <input type="text" id="firstInput" placeholder="10" />
+              <div class="tooltip">Choisir la première valeur</div>
+            </div>
+            <div class="input-cont">
+              <select name="" id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+              </select>
+              <div class="tooltip">Choisir l'opérateur</div>
+            </div>
+            <div class="input-cont">
+              <input type="text" id="secondInput" placeholder="10" />
+              <div class="tooltip">Choisir la seconde valeur</div>
+            </div>
             <button type="submit" id="form-submit">Calculer</button>
           </form>
           <div id="form-display"><span>0</span></div>
