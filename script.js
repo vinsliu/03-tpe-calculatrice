@@ -1,10 +1,10 @@
 document.getElementById("show").addEventListener("click", function () {
-  document.getElementById("calculator").style.display = "block";
-//   document.getElementById("calculatorForm").style.display = "block";
+  // document.getElementById("calculator").style.display = "block";
+  document.getElementById("calculatorForm").style.display = "block";
 });
 document.getElementById("hide").addEventListener("click", function () {
-  document.getElementById("calculator").style.display = "none";
-//   document.getElementById("calculatorForm").style.display = "none";
+  // document.getElementById("calculator").style.display = "none";
+  document.getElementById("calculatorForm").style.display = "none";
 });
 
 // Format formulaire
