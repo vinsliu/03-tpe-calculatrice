@@ -24,6 +24,10 @@ section {
   gap: 5rem;
   min-height: 90dvh;
 }
+#button {
+  position: absolute;
+  top: 13rem;
+}
 #button button {
   background-color: #fff;
   border: 2px solid cornflowerblue;
@@ -81,6 +85,7 @@ form button:hover {
   padding: 2rem;
   border: 2px solid #000;
   border-radius: 5px;
+  width: 48rem;
 }
 #form-display span {
   display: flex;
@@ -93,7 +98,29 @@ form button:hover {
   padding: 2rem;
   font-size: 2rem;
 }
+#form-history {
+  background-color: cornflowerblue;
+  height: 20rem;
+  padding: 2rem;
+  border: 2px solid #000;
+  border-radius: 5px;
+  overflow-y: auto;
+  width: 48rem;
+}
+#form-history span {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid grey;
+  border-radius: 5px;
+  height: 4rem;
+  padding: 2rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
 #calculator {
+  display: none;
   width: 35rem;
   height: 47rem;
   border: 4px solid #000;
