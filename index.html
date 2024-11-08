@@ -11,29 +11,51 @@
       <h1>Calculatrice</h1>
       <p>TPE Calculatrice en HTML, CSS, JavaScript.</p>
     </header>
+
     <section>
-      <div id="calculator">
-        <div id="screen">0</div>
-        <div id="keys">
-          <span>7</span>
-          <span>8</span>
-          <span>9</span>
-          <span>/</span>
-          <span>4</span>
-          <span>5</span>
-          <span>6</span>
-          <span>*</span>
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
-          <span>-</span>
-          <span>.</span>
-          <span>0</span>
-          <span>=</span>
-          <span>+</span>
+      <div id="button">
+        <button id="show">Afficher</button>
+        <button id="hide">Cacher</button>
+      </div>
+      <div id="container">
+        <div id="form">
+          <form action="">
+            <input type="text" placeholder="10" />
+            <select name="" id="operator">
+              <option value="plus">+</option>
+              <option value="minus">-</option>
+              <option value="times">*</option>
+              <option value="divide">/</option>
+            </select>
+            <input type="text" placeholder="10" />
+            <button type="submit">Calculer</button>
+          </form>
+          <div id="form-display"><span>0</span></div>
+        </div>
+        <div id="calculator">
+          <div id="screen">0</div>
+          <div id="keys">
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>/</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>*</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>-</span>
+            <span>.</span>
+            <span>0</span>
+            <span>=</span>
+            <span>+</span>
+          </div>
         </div>
       </div>
     </section>
+
     <footer>
       <p>&copy; 2024 Vincent L., Cloud Campus. Tous droits réservés.</p>
     </footer>

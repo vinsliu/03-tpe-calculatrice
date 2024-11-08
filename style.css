@@ -18,23 +18,94 @@ header h1 {
 }
 section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5rem;
   min-height: 90dvh;
+}
+#button button {
+  background-color: #fff;
+  border: 2px solid cornflowerblue;
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
+}
+#button button:hover {
+  color: #fff;
+  background-color: cornflowerblue;
+  border: 2px solid #000;
+}
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+#form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+form {
+  background-color: cornflowerblue;
+  padding: 2rem;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+form input {
+  padding: 1rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+form select {
+  padding: 1rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+form button {
+  padding: 1rem;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+form button:hover {
+  color: #fff;
+  background-color: cornflowerblue;
+  border: 2px solid #fff;
+}
+#form-display {
+  background-color: cornflowerblue;
+  padding: 2rem;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+#form-display span {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid grey;
+  border-radius: 5px;
+  height: 4rem;
+  padding: 2rem;
+  font-size: 2rem;
 }
 #calculator {
   width: 35rem;
   height: 47rem;
-  border: 4px solid #373f47;
+  border: 4px solid #000;
   border-radius: 5px;
-  background-color: #6c91c2;
+  background-color: cornflowerblue;
 }
 #screen {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   background-color: #fff;
-  border: 2px solid #373f47;
+  border: 2px solid grey;
   border-radius: 5px;
   height: 10rem;
   margin: 2rem;
@@ -47,10 +118,10 @@ section {
   justify-content: center;
   gap: 1rem;
 }
-span {
+#keys span {
   border: 1px solid #000;
   border-radius: 5px;
-  background-color: #aaabbc;
+  background-color: #fff;
   width: 7rem;
   height: 7rem;
   font-size: 2rem;
@@ -58,6 +129,11 @@ span {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+#keys span:hover {
+  color: #fff;
+  background-color: cornflowerblue;
+  border: 1px solid #fff;
 }
 footer {
   background-color: cornflowerblue;
